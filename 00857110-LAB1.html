@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Reference: 
+    https://codepen.io/knaman2609/pen/Zbyjvv
+    https://pixabay.com/illustrations/donald-trump-america-president-5103361/ 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #f5889a;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #f0cbd2;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #ce7987;
+        }
+        .qaq{
+            position: relative;
+        }
+        .ouo {
+            position: absolute;
+            top: -13px;
+            left: 90%;
+       }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        
+        <div class="header">
+            <p class="qaq">
+                <a class="ouo" href="https://www.instagram.com/dreamlieuwu/" target="_blank">
+                <img id="ig" src="icon.png" height="50px" width="50px" target="_blank" />
+                </a>
+            </p>
+            
+            <div class="full-name">
+                <span class="first-name">Anthea</span>
+                <span class="last-name">Chung</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <span class="email-val">00857110@email.ntou.edu.tw</span>
+                <span class="separator"></span>
+                <span class="phone">Phone: </span>
+                <span class="phone-val">0955-189-887</span>
+            </div>
+
+            <div>
+                <img src="solar.png" width="60%">
+            </div>
+
+            <div class="about">
+                <span class="position">Front-End Developer </span>
+                <span class="desc">
+                    I am learning in front-end development with more than 2 years of experience writing html, css, and js. I'm
+                    motivated, result-focused and seeking a successful team-oriented team with opportunity to grow.
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Experience</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">CSE, NTOU</div>
+                            <div class="addr">KEL, TW</div>
+                            <div class="duration">Sep 2020 - Jan 2021</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">TA</div>
+                            <div class="desc">Introduction of Computer Science</div>
+                        </div>
+                    </div>
+                    <!-- <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Akount</div>
+                            <div class="addr">San Monica, CA</div>
+                            <div class="duration">Jan 2011 - Feb 2015</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Fr developer</div>
+                            <div class="desc">did This and that</div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Education</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">National Taiwan Ocean University</div>
+                            <div class="addr">KEL, TW</div>
+                            <div class="duration">Sep 2019 - Nov 2020</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Bachelor</div>
+                            <div class="desc">undergraduate</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Hu-Wei Senior High School</div>
+                            <div class="addr">YUN, TW</div>
+                            <div class="duration">Sep 2016 - JUN 2019</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">High school</div>
+                            <div class="desc">Gifted and Talented Class</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">Projects</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name" ><a href="http://linux.deepsea9.taipei/~b00857110/" style="text-decoration:none;" >Self-introduction</a></div>
+                        <div class="text">One of project to Laboratory For Introduction of Computer Science in 2019.</div>
+                    </div>
+
+                    <!-- <div class="section__list-item">
+                        <div class="name">DSP</div>
+                        <div class="text">I am a front-end developer with more than 3 years of experience writing html,
+                            css, and js. I'm motivated, result-focused and seeking a successful team-oriented company
+                            with opportunity to grow. 
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Skills</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                Javascript
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked/>
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" />
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" />
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" />
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" />
+                            <label for="ck5"></label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            CSS</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck11" type="checkbox" checked />
+                        <label for="ck11"></label>
+                        <input id="ck22" type="checkbox" checked />
+                        <label for="ck22"></label>
+                        <input id="ck33" type="checkbox" checked/>
+                        <label for="ck33"></label>
+                        <input id="ck44" type="checkbox" />
+                        <label for="ck44"></label>
+                        <input id="ck55" type="checkbox" />
+                        <label for="ck55"></label>
+
+                    </div>
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            Enthusiasm for Front-end Web Development</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck111" type="checkbox" checked />
+                        <label for="ck111"></label>
+                        <input id="ck222" type="checkbox" checked />
+                        <label for="ck222"></label>
+                        <input id="ck333" type="checkbox" checked/>
+                        <label for="ck333"></label>
+                        <input id="ck444" type="checkbox" checked/>
+                        <label for="ck444"></label>
+                        <input id="ck555" type="checkbox" checked/>
+                        <label for="ck555"></label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        Fencing(Saber), programming.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<!-- 		
+───────────────────────────────────────
+───▐▀▄───────▄▀▌───▄▄▄▄▄▄▄─────────────
+───▌▒▒▀▄▄▄▄▄▀▒▒▐▄▀▀▒██▒██▒▀▀▄──────────
+──▐▒▒▒▒▀▒▀▒▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄────────
+──▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▒▒▒▒▒▒▒▒▀▄──────
+▀█▒▒▒█▌▒▒█▒▒▐█▒▒▒▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▌─────
+▀▌▒▒▒▒▒▒▀▒▀▒▒▒▒▒▒▀▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐───▄▄
+▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▌▄█▒█
+▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒█▀─
+▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▀───
+▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▌────
+─▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐─────
+─▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▌─────
+──▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐──────
+──▐▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▌──────
+────▀▄▄▀▀▀▀▀▄▄▀▀▀▀▀▀▀▄▄▀▀▀▀▀▄▄▀──────── -->
